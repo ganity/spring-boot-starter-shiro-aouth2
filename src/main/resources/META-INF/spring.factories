@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.github.ganity.oauth2.shiro.ShiroOAuth2Configuration
