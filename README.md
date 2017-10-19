@@ -87,7 +87,7 @@ public class UserRealm extends OAuth2AuthorizingRealm {
 }
 ```
 
-- run your Application
+- the simple [my-shiro-oltu-oauth2-starter-simple](https://github.com/ganity/my-shiro-oltu-oauth2-starter-simple.git)
 
 
 
