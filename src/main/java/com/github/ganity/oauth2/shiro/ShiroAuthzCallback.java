@@ -28,4 +28,22 @@ public class ShiroAuthzCallback implements AuthzCallback {
             e.printStackTrace();
         }
     }
+
+    @Override
+    public OAuth2AccessToken logout() {
+
+        Subject subject = SecurityUtils.getSubject();
+
+        try {
+            Session session = subject.getSession();
+            OAuth2AccessToken accessToken = (OAuth2AccessToken)session.getAttribute(AUTH_ACCESS_TOKEN);
+            if (subject.isAuthenticated()) {
+                subject.logout();
+            }
+            return accessToken;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }
