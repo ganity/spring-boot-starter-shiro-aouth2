@@ -1,4 +1,4 @@
-# spring-boot-starter-swagger2
+# spring-boot-starter-shiro-aouth2
 A spring boot starter use shiro with oltu as aouth2 client
 ## How to build and install
 
